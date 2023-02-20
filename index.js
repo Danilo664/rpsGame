@@ -32,6 +32,10 @@ scissors.addEventListener("click", ()=>{
 });
 
 function playGame(){
+    if(playerPoints==5||computerPoints==5){
+        playerPoints=0;
+        computerPoints=0;
+    }
     signChoice = Math.floor(Math.random()*rpsSigns.length);
     computerSelection = rpsSigns[signChoice];
 
